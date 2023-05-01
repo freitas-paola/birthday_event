@@ -1,8 +1,7 @@
 @use "variables";
 
 .hero {
-  padding-top: 10rem;
-  padding-bottom: 15rem;
+  padding: 10rem 1rem 15rem;
   background-image: linear-gradient(
       to right,
       rgba(variables.$secondaryTextColor, 0.5),
@@ -51,6 +50,36 @@
           text-transform: uppercase;
           color: variables.$buttonPink;
         }
+      }
+    }
+  }
+
+  @media (max-width: 900px) {
+    .info {
+      flex-direction: column;
+      gap: 1rem;
+    }
+  }
+
+  @media (max-width: 640px) {
+    padding: 5rem 1rem 5rem;
+    &__title {
+      font-size: 2.5rem;
+    }
+
+    &__text {
+      font-size: 1.5rem;
+
+      padding-bottom: 3rem;
+
+      span {
+        display: block;
+      }
+    }
+
+    .info {
+      &__list {
+        flex-direction: column;
       }
     }
   }

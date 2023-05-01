@@ -19,4 +19,8 @@
       padding: 0.5rem;
     }
   }
+
+  @media (max-width: 640px) {
+    padding: 3rem 1rem;
+  }
 }

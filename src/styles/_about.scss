@@ -1,6 +1,5 @@
 .about {
-  padding-top: 5rem;
-  padding-bottom: 5rem;
+  padding: 5rem 1rem;
 
   &__text {
     font-size: 1.1rem;
@@ -20,6 +19,26 @@
         transform: scale(1.1);
         cursor: pointer;
       }
+    }
+  }
+
+  @media (max-width: 900px) {
+    &__images {
+      grid-template-columns: repeat(3, 1fr);
+    }
+  }
+
+  @media (max-width: 640px) {
+    padding: 3rem 1rem;
+    &__images {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+
+  @media (max-width: 300px) {
+    padding: 3rem 1rem;
+    &__images {
+      grid-template-columns: 1fr;
     }
   }
 }
