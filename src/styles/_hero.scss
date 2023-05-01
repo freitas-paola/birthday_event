@@ -1,0 +1,57 @@
+@use "variables";
+
+.hero {
+  padding-top: 10rem;
+  padding-bottom: 15rem;
+  background-image: linear-gradient(
+      to right,
+      rgba(variables.$secondaryTextColor, 0.5),
+      rgba(variables.$secondaryTextColor, 0.5)
+    ),
+    url(../images/photo-1530103862676-de8c9debad1d.avif);
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  text-align: center;
+
+  &__title {
+    font-family: "Lobster Two", cursive;
+    text-align: center;
+    font-size: 3.5rem;
+    padding-bottom: 3rem;
+  }
+
+  &__text {
+    font-size: 2rem;
+    text-transform: uppercase;
+    padding-bottom: 4rem;
+
+    span {
+      text-transform: lowercase;
+      font-weight: 700;
+    }
+  }
+
+  .info {
+    background-color: variables.$secondaryTextColor;
+    padding: 1.5rem;
+    border-radius: 0.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+
+    &__list {
+      display: flex;
+      gap: 1.5rem;
+
+      &__item {
+        font-size: 1.1rem;
+
+        strong {
+          text-transform: uppercase;
+          color: variables.$buttonPink;
+        }
+      }
+    }
+  }
+}

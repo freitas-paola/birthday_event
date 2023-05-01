@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Paola's B-day!</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;1,700&family=Lobster+Two&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./styles/main.scss" />
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+  </head>
+  <body>
+    <header class="hero">
+      <div class="container">
+        <h1 class="hero__title">Você está convidado para comemorar comigo!</h1>
+        <p class="hero__text">a festa começa em <span id="counter"></span></p>
+        <div class="info">
+          <ul class="info__list">
+            <li class="info__list__item">
+              <strong>Data:</strong> 06 de fevereiro de 2024
+            </li>
+            <li class="info__list__item">
+              <strong>Lugar:</strong> Parque Ibirapuera
+            </li>
+            <li class="info__list__item"><strong>Horário:</strong> 15h</li>
+          </ul>
+          <a href="#confirm" class="button">Confirme sua presença</a>
+        </div>
+      </div>
+    </header>
+    <section class="about">
+      <div class="container">
+        <h2 class="title">Sobre a festa</h2>
+        <p class="about__text">
+          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Libero
+          provident, doloremque fugiat architecto ea repellendus voluptas
+          tempora pariatur aliquam quo ipsa velit vero illum iusto tenetur qui.
+          Ratione, veritatis totam. Lorem ipsum dolor, sit amet consectetur
+          adipisicing elit. A tenetur sequi accusamus quos cupiditate laudantium
+          porro eaque molestias soluta incidunt, totam nesciunt dolorum eos.
+          Culpa vel iure porro veritatis atque.
+        </p>
+        <div class="about__images">
+          <img
+            src="./images/photo-1590166774851-bc49b23a18fe.avif"
+            alt=""
+            class="about__images__img"
+          />
+          <img
+            src="./images/photo-1596241913242-b20788b3dfeb.avif"
+            alt=""
+            class="about__images__img"
+          />
+          <img
+            src="./images/photo-1598316942621-dc81339178b6.avif"
+            alt=""
+            class="about__images__img"
+          />
+          <img
+            src="./images/photo-1618031312993-f93038f30365.avif"
+            alt=""
+            class="about__images__img"
+          />
+          <img
+            src="./images/photo-1656615720849-db697d06d820.avif"
+            alt=""
+            class="about__images__img"
+          />
+          <img
+            src="./images/photo-1627013817723-3bbb5166cc50.avif"
+            alt=""
+            class="about__images__img"
+          />
+        </div>
+      </div>
+    </section>
+    <section class="confirm" id="confirm">
+      <div class="container" data-aos="zoom-in">
+        <h2 class="title confirm__title">Confirme sua presença</h2>
+        <form class="confirm__form">
+          <label class="confirm__form__label" for="name">Nome:</label>
+          <input
+            class="confirm__form__input"
+            type="text"
+            id="name"
+            name="name"
+            required
+          />
+          <label class="confirm__form__label" for="email">E-mail:</label>
+          <input
+            class="confirm__form__input"
+            type="email"
+            name="email"
+            id="email"
+            required
+          />
+          <label class="confirm__form__label" for="number"
+            >Número de pessoas:</label
+          >
+          <input
+            class="confirm__form__input"
+            type="number"
+            name="number"
+            id="number"
+            min="1"
+            required
+          />
+          <button type="submit" class="button">Confirmar</button>
+        </form>
+      </div>
+    </section>
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script src="./scripts/main.js"></script>
+  </body>
+</html>

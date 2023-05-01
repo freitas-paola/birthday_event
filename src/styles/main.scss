@@ -1,0 +1,26 @@
+@use "variables";
+@use "./components/button";
+@use "hero";
+@use "about";
+@use "confirm";
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Lato", sans-serif;
+  list-style: none;
+}
+
+.container {
+  max-width: 960px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.title {
+  font-family: "Lobster Two", cursive;
+  color: variables.$textColor;
+  font-size: 2.5rem;
+  padding-bottom: 1rem;
+}

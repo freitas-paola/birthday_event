@@ -1,0 +1,25 @@
+.about {
+  padding-top: 5rem;
+  padding-bottom: 5rem;
+
+  &__text {
+    font-size: 1.1rem;
+    padding-bottom: 2rem;
+  }
+
+  &__images {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    gap: 0.8rem;
+    &__img {
+      height: 12.5rem;
+      width: 100%;
+      object-fit: cover;
+
+      &:hover {
+        transform: scale(1.1);
+        cursor: pointer;
+      }
+    }
+  }
+}
